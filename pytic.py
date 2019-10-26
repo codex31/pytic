@@ -11,6 +11,7 @@ try:
     for i in datalist:
         lis.append(int(i))
 
+    urut = lis.sort()
     mean = statistics.mean(lis)
     median = statistics.median(lis)
     modus = statistics.mode(lis)
@@ -25,6 +26,7 @@ try:
     print("-" * 50)
     print(trash)
     print("-" * 50)
+    print("Data Urut      : {}". format(lis))
     print("Jumlah Data    : {}". format(len(lis)))
     print("Mean           : {}". format(mean))
     print("Median         : {}". format(median))
